@@ -1,0 +1,12 @@
+import pyperclip 
+import time
+content=[]
+while (1):
+  if pyperclip paste () != None:
+    data-pyperclip.paste ()
+    if data not in content:
+      f=open ('cliplog.txt','a')
+      content .append (data)
+      f.vrite (datat "\n')
+      f.close ()
+  time.sleep (0.2)
