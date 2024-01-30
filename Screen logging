@@ -1,0 +1,10 @@
+import pyautogui
+import time
+
+count = 0
+
+while True:
+    count = count + 1
+    myScreenshot = pyautogui.screenshot()
+    myScreenshot.save(str(count) + '.png')
+    time.sleep(5)
